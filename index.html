@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="menu js-tabmenu">
     <div class="container">
@@ -60,7 +62,8 @@
 
       <div class="content__box">
         <h2>Doação</h2>
-        <p>quer ajudar a manter meus estudos? se sim, você pode fazer doações diretas através do pix ou pelo streamlabs :)</p>
+        <p>quer ajudar a manter meus estudos? se sim, você pode fazer doações diretas através do pix ou pelo streamlabs
+          :)</p>
         <p><b>pix/chave aleatória:</b> 2fd0e739-01ac-44cb-b79b-730fab0acff2</p>
         <p><b>streamlabs:</b> streamlabs.com/mariliadruzian</p>
       </div>
@@ -73,34 +76,49 @@
         <div class="bullet"></div>
       </div>
 
-      <div class="content__box content__box--config">
+      <div class="content__box content__box--config js-accordion">
         <h2>Configuração</h2>
-        <p><b>microfone:</b> hyperx solocast</p>
-        <p><b>headset:</b> hyperx cloud revolver</p>
-        <p><b>teclado:</b> hyperx alloy origins</p>
-        <p><b>mouse:</b> logitech g703</p>
-        <p><b>webcam:</b> logitech c920s pro</p>
-        <p><b>monitor:</b> lg ultrawide 29' 29WK500</p>
 
-        <br>
+        <div class="perifericos">
+          <h3>Periféricos</h3>
 
+          <div class="accordion">
+            <p><b>microfone:</b> hyperx solocast</p>
+            <p><b>headset:</b> hyperx cloud revolver</p>
+            <p><b>teclado:</b> hyperx alloy origins</p>
+            <p><b>mouse:</b> logitech g703</p>
+            <p><b>webcam:</b> logitech c920s pro</p>
+            <p><b>monitor:</b> lg ultrawide 29' 29WK500</p>
+          </div>
+        </div>
 
-        <p><b>cpu:</b> intel core i5-9400f</p>
-        <p><b>gpu:</b> gigabyte rx 570</p>
-        <p><b>ram:</b> corsair vengeance rgb pro 16gb</p>
-        <p><b>placa-mãe:</b> b360 aorus gaming 3 wi-fi</p>
-        <p><b>fonte:</b> corsair 650w</p>
+        <div class="pc">
+          <h3>Configuração do PC</h3>
 
-        <br>
+          <div class="accordion">
+            <p><b>cpu:</b> intel core i5-9400f</p>
+            <p><b>gpu:</b> gigabyte rx 570</p>
+            <p><b>ram:</b> corsair vengeance rgb pro 16gb</p>
+            <p><b>placa-mãe:</b> b360 aorus gaming 3 wi-fi</p>
+            <p><b>fonte:</b> corsair 650w</p>
+          </div>
+        </div>
 
-        <p><b>sistema operacional:</b> win11</p>
-        <p><b>ide:</b> vscode</p>
-        <p><b>vscode theme:</b> dracula</p>
-        <p><b>fonte:</b> fira code</p>
+        <div>
+          <h3>Ferramentas</h3>
+
+          <div class="accordion">
+            <p><b>sistema operacional:</b> win11</p>
+            <p><b>ide:</b> vscode</p>
+            <p><b>vscode theme:</b> dracula</p>
+            <p><b>fonte:</b> fira code</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

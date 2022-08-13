@@ -95,6 +95,20 @@ dd {
   color: #302538;
 }
 
+.content__box > div {
+  margin-bottom: 20px;
+}
+
+.content__box h3 {
+  cursor: pointer;
+  margin-bottom: 15px;
+  color: #a84ee9;
+}
+
+.content__box h3:hover {
+  color: #812dbd;
+}
+
 .content__box--config > p {
   margin-bottom: 0;
 }
@@ -120,5 +134,34 @@ html.js .js-tabcontent .content__item.ativo {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+html.js .js-accordion h3::after {
+  content: "⬎";
+  margin-left: 5px;
+}
+
+html.js .js-accordion h3.ativo::after {
+  content: "⬏";
+}
+
+html.js .js-accordion .accordion {
+  display: none;
+  animation: slideDown .5s forwards;
+}
+
+html.js .js-accordion .accordion.ativo {
+  display: block !important;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
   }
 }
